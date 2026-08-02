@@ -9,16 +9,16 @@ mod.version = "0.1.0"
 mod.mc_compat = "[1.21, 1.21.1]"
 # List of releases to be marked compatible on Modrinth/Curseforge
 mod.mc_releases = ["1.21", "1.21.1"]
-deps.neo_loader = "21.1.234"
+deps.neo_loader = "21.1.248"
 
 
 ["1.21.11"]
 mod.mc_compat = "[1.21.11]"
 mod.mc_releases = ["1.21.11"]
-deps.neo_loader = "21.11.42"
+deps.neo_loader = "21.11.45"
 
 
 ["26.2.x"]
 mod.mc_compat = "[26.2, 26.3)"
 mod.mc_releases = ["26.2"]
-deps.neo_loader = "26.2.0.6-beta"
+deps.neo_loader = "26.2.0.43-beta"
