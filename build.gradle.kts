@@ -1,6 +1,7 @@
+import dev.kikugie.stonecutter.controller.task.StonecutterTaskMutexService
+
 plugins {
     id("net.neoforged.moddev")
-    id("neoforge-mutex")
 }
 
 version = "${sc.properties["mod.version"]}+${sc.current.version}"
@@ -86,6 +87,7 @@ tasks {
 
     named("createMinecraftArtifacts") {
         dependsOn("stonecutterGenerate")
+        usesService(StonecutterTaskMutexService.create(gradle, name))
     }
 
     // Includes the license file in the built mod
